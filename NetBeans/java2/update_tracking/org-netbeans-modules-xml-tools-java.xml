@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.netbeans.modules.xml.tools.java">
+    <module_version install_time="1226277475824" last="true" origin="installer" specification_version="1.2.1">
+        <file crc="3401073933" name="config/Modules/org-netbeans-modules-xml-tools-java.xml"/>
+        <file crc="3298985282" name="modules/org-netbeans-modules-xml-tools-java.jar"/>
+    </module_version>
+</module>

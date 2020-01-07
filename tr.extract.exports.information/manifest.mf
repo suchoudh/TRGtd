@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+OpenIDE-Module: tr.extract.exports.information
+OpenIDE-Module-Layer: tr/extract/exports/information/layer.xml
+OpenIDE-Module-Localizing-Bundle: tr/extract/exports/information/Bundle.properties
+OpenIDE-Module-Requires: org.netbeans.api.javahelp.Help
+OpenIDE-Module-Specification-Version: 1.0.2
+

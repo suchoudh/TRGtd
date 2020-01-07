@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.netbeans.modules.apisupport.harness">
+    <module_version install_time="1226276983418" last="true" origin="installer" specification_version="1.12.1">
+        <file crc="646422600" name="README"/>
+        <file crc="4117177725" name="build.xml"/>
+        <file crc="4012251209" name="common.xml"/>
+        <file crc="2853826442" name="config/Modules/org-netbeans-modules-apisupport-harness.xml"/>
+        <file crc="1289644161" name="etc/Info.plist"/>
+        <file crc="695559759" name="etc/app.conf"/>
+        <file crc="2195682192" name="etc/applicationIcon.icns"/>
+        <file crc="2765995663" name="jdk.xml"/>
+        <file crc="230795565" name="jnlp.xml"/>
+        <file crc="79346886" name="jnlp/jnlp-launcher.jar"/>
+        <file crc="101388545" name="jsearch-2.0_05.jar"/>
+        <file crc="3925006993" name="launchers/app.exe"/>
+        <file crc="3558529547" name="launchers/app.sh"/>
+        <file crc="3085068657" name="launchers/app_w.exe"/>
+        <file crc="379223967" name="modules/org-netbeans-modules-apisupport-harness.jar"/>
+        <file crc="3229591209" name="run.xml"/>
+        <file crc="3142285320" name="suite.xml"/>
+        <file crc="2861542919" name="tasks.jar"/>
+    </module_version>
+</module>

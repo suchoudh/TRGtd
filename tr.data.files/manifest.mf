@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+OpenIDE-Module: tr.data.files
+OpenIDE-Module-Install: tr/data/files/Installer.class
+OpenIDE-Module-Layer: tr/data/files/layer.xml
+OpenIDE-Module-Localizing-Bundle: tr/data/files/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+

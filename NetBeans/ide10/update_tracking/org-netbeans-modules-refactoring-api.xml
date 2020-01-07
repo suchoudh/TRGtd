@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.netbeans.modules.refactoring.api">
+    <module_version install_time="1226277106121" last="true" origin="installer" specification_version="1.4.1">
+        <file crc="2134431594" name="config/Modules/org-netbeans-modules-refactoring-api.xml"/>
+        <file crc="235173508" name="modules/org-netbeans-modules-refactoring-api.jar"/>
+    </module_version>
+</module>

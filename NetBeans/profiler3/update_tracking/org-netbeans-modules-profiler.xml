@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.netbeans.modules.profiler/1">
+<module_version install_time="1226277282401" last="false" origin="installer" specification_version="1.9.1">
+<file crc="2558193396" name="ant/nblib/org-netbeans-modules-profiler.jar"/>
+<file crc="1234751172" name="config/Modules/org-netbeans-modules-profiler.xml"/>
+<file crc="3038956824" name="config/Services/filters-default.xml"/>
+<file crc="2070331124" name="config/Services/filtersets-default.xml"/>
+<file crc="1523983404" name="modules/docs/org-netbeans-modules-profiler.jar"/>
+<file crc="1717362776" name="modules/org-netbeans-modules-profiler.jar"/>
+</module_version>
+<module_version install_time="1229388324756" last="true" origin="NetBeans" specification_version="1.9.2">
+<file crc="437404334" name="modules/docs/locale/org-netbeans-modules-profiler_ja.jar"/>
+<file crc="2745315743" name="modules/docs/locale/org-netbeans-modules-profiler_pt_BR.jar"/>
+<file crc="3021211595" name="modules/docs/locale/org-netbeans-modules-profiler_zh_CN.jar"/>
+<file crc="1076212588" name="modules/locale/org-netbeans-modules-profiler_ja.jar"/>
+<file crc="3043957606" name="modules/locale/org-netbeans-modules-profiler_pt_BR.jar"/>
+<file crc="2945509777" name="modules/locale/org-netbeans-modules-profiler_zh_CN.jar"/>
+<file crc="3034989912" name="ant/nblib/org-netbeans-modules-profiler.jar"/>
+<file crc="3862004494" name="config/Modules/org-netbeans-modules-profiler.xml"/>
+<file crc="3038956824" name="config/Services/filters-default.xml"/>
+<file crc="2070331124" name="config/Services/filtersets-default.xml"/>
+<file crc="757993518" name="modules/docs/org-netbeans-modules-profiler.jar"/>
+<file crc="328591384" name="modules/org-netbeans-modules-profiler.jar"/>
+</module_version>
+</module>

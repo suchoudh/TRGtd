@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.netbeans.modules.java.guards/0">
+    <module_version install_time="1226277021614" last="true" origin="installer" specification_version="0.4.1">
+        <file crc="708194820" name="config/Modules/org-netbeans-modules-java-guards.xml"/>
+        <file crc="4081783528" name="modules/org-netbeans-modules-java-guards.jar"/>
+    </module_version>
+</module>

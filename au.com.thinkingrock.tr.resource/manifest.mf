@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+AutoUpdate-Show-In-Client: true
+OpenIDE-Module: au.com.thinkingrock.tr.resource
+OpenIDE-Module-Layer: au/com/thinkingrock/tr/resource/layer.xml
+OpenIDE-Module-Localizing-Bundle: au/com/thinkingrock/tr/resource/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0.3
+

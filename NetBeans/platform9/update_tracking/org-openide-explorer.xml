@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.openide.explorer">
+<module_version install_time="1226277646788" last="false" origin="installer" specification_version="6.16.1">
+<file crc="370925683" name="config/ModuleAutoDeps/org-openide-explorer.xml"/>
+<file crc="3444857649" name="config/Modules/org-openide-explorer.xml"/>
+<file crc="3870640964" name="modules/org-openide-explorer.jar"/>
+</module_version>
+<module_version install_time="1229388323838" last="true" origin="NetBeans" specification_version="6.16.2">
+<file crc="1443605514" name="modules/locale/org-openide-explorer_ja.jar"/>
+<file crc="1630015755" name="modules/locale/org-openide-explorer_pt_BR.jar"/>
+<file crc="418070105" name="modules/locale/org-openide-explorer_zh_CN.jar"/>
+<file crc="370925683" name="config/ModuleAutoDeps/org-openide-explorer.xml"/>
+<file crc="1660753659" name="config/Modules/org-openide-explorer.xml"/>
+<file crc="77041725" name="modules/org-openide-explorer.jar"/>
+</module_version>
+</module>

@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+OpenIDE-Module: tr.view.collect
+OpenIDE-Module-Install: tr/view/collect/Installer.class
+OpenIDE-Module-Layer: tr/view/collect/layer.xml
+OpenIDE-Module-Localizing-Bundle: tr/view/collect/Bundle.properties
+OpenIDE-Module-Requires: org.netbeans.api.javahelp.Help
+OpenIDE-Module-Specification-Version: 2.0.1
+

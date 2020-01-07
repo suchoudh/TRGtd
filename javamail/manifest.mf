@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+OpenIDE-Module: javamail
+OpenIDE-Module-Localizing-Bundle: javamail/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0.1
+

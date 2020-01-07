@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+OpenIDE-Module: tr.view.criteria
+OpenIDE-Module-Install: tr/view/criteria/Installer.class
+OpenIDE-Module-Layer: tr/view/criteria/layer.xml
+OpenIDE-Module-Localizing-Bundle: tr/view/criteria/Bundle.properties
+OpenIDE-Module-Requires: org.netbeans.api.javahelp.Help
+OpenIDE-Module-Specification-Version: 1.0.2
+

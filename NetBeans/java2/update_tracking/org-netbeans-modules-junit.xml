@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.netbeans.modules.junit/2">
+    <module_version install_time="1226277415033" last="true" origin="installer" specification_version="2.28.2">
+        <file crc="1249895666" name="ant/patches/72080.jar"/>
+        <file crc="1772761813" name="config/Modules/org-netbeans-modules-junit.xml"/>
+        <file crc="920500528" name="docs/junit-3.8.2-api.zip"/>
+        <file crc="1100775874" name="docs/junit-4.5-api.zip"/>
+        <file crc="2343998382" name="docs/junit-4.5-src.jar"/>
+        <file crc="857334496" name="modules/ext/junit-3.8.2.jar"/>
+        <file crc="1990088437" name="modules/org-netbeans-modules-junit.jar"/>
+    </module_version>
+</module>

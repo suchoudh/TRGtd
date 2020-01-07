@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.1//EN" "http://www.netbeans.org/dtds/filesystem-1_1.dtd">
+<filesystem>        
+    <folder name="OptionsDialog">
+        <folder name="Advanced">
+            <file name="tr-extract-clean-ExtractCleanAdvancedOption.instance"/>
+        </folder>
+    </folder>
+    <folder name="Services">
+        <folder name="JavaHelp">
+            <file name="prefs-extract-clean-helpset.xml" url="prefs-extract-clean-helpset.xml"/>
+        </folder>
+    </folder>
+</filesystem>

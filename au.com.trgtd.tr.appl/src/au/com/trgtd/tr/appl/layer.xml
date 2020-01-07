@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.1//EN" "http://www.netbeans.org/dtds/filesystem-1_1.dtd">
+<filesystem>
+    <attr name="Menu\View\org-netbeans-core-actions-LogAction.instance\name" stringvalue="Log File"/>
+
+    <!-- 1. Overview -->
+    <attr intvalue="1"  name="Services\JavaHelp\overview-helpset.xml\position"/>
+
+    <!-- 2. Setup -->
+    <attr intvalue="20"  name="Services\JavaHelp\contexts-helpset.xml\position"/>
+    <attr intvalue="21"  name="Services\JavaHelp\criteria-helpset.xml\position"/>
+    <attr intvalue="22"  name="Services\JavaHelp\topics-helpset.xml\position"/>
+
+    <!-- 3. Collect -->
+    <attr intvalue="31"  name="Services\JavaHelp\collect-helpset.xml\position"/>
+
+    <!-- 4. Process -->
+    <attr intvalue="41"  name="Services\JavaHelp\process-helpset.xml\position"/>
+
+    <!-- 5. Review -->
+    <attr intvalue="50"  name="Services\JavaHelp\review-actions-helpset.xml\position"/>
+    <attr intvalue="51"  name="Services\JavaHelp\review-projects-helpset.xml\position"/>
+    <attr intvalue="52" name="Services\JavaHelp\sequencing-helpset.xml\position"/>
+    <attr intvalue="53" name="Services\JavaHelp\review-future-helpset.xml\position"/>
+    <attr intvalue="54" name="Services\JavaHelp\review-reference-helpset.xml\position"/>
+
+    <!-- 6. Import -->
+    <attr intvalue="60" name="Services\JavaHelp\imports-helpset.xml\position"/>
+    <attr intvalue="61" name="Services\JavaHelp\imports-thoughts-helpset.xml\position"/>
+
+    <!-- 7. Export -->
+    <attr intvalue="70" name="Services\JavaHelp\exports-helpset.xml\position"/>
+    <attr intvalue="71" name="Services\JavaHelp\export-actions-helpset.xml\position"/>
+    <attr intvalue="72" name="Services\JavaHelp\export-future-helpset.xml\position"/>
+    <attr intvalue="73" name="Services\JavaHelp\export-information-helpset.xml\position"/>
+
+    <!-- 8. Reports -->
+    <attr intvalue="80"  name="Services\JavaHelp\reports-helpset.xml\position"/>
+    <attr intvalue="81" name="Services\JavaHelp\report-actionsbycontext-helpset.xml\position"/>
+    <attr intvalue="82" name="Services\JavaHelp\report-actionsbydate-helpset.xml\position"/>
+    <attr intvalue="83" name="Services\JavaHelp\report-nextactions-helpset.xml\position"/>
+    <attr intvalue="84" name="Services\JavaHelp\report-pocketmod-helpset.xml\position"/>
+    <attr intvalue="85" name="Services\JavaHelp\report-projectdetails-helpset.xml\position"/>
+    <attr intvalue="86" name="Services\JavaHelp\report-projectoutline-helpset.xml\position"/>
+
+    <!-- 9. Preferences/Options -->
+    <attr intvalue="91"  name="Services\JavaHelp\prefs-about-helpset.xml\position"/>
+    <attr intvalue="92"  name="Services\JavaHelp\prefs-review-actions-helpset.xml\position"/>
+    <attr intvalue="93"  name="Services\JavaHelp\prefs-appl-helpset.xml\position"/>
+
+    <attr intvalue="94"  name="Services\JavaHelp\prefs-calendar-helpset.xml\position"/>
+    <attr intvalue="95"  name="Services\JavaHelp\prefs-dates-helpset.xml\position"/>
+    <attr intvalue="96"  name="Services\JavaHelp\prefs-datafile-helpset.xml\position"/>
+
+    <attr intvalue="98"  name="Services\JavaHelp\prefs-extract-helpset.xml\position"/>
+    <attr intvalue="99"  name="Services\JavaHelp\prefs-extract-clean-helpset.xml\position"/>
+    <attr intvalue="100" name="Services\JavaHelp\prefs-gui-helpset.xml\position"/>
+    <attr intvalue="101" name="Services\JavaHelp\prefs-import-thoughts-helpset.xml\position"/>
+
+    <attr intvalue="102" name="Services\JavaHelp\prefs-projects-helpset.xml\position"/>
+    <attr intvalue="103" name="Services\JavaHelp\prefs-recurrence-helpset.xml\position"/>
+    <attr intvalue="104" name="Services\JavaHelp\prefs-actions-screens-helpset.xml\position"/>
+
+
+    <!-- 10. Archiving -->
+    <attr intvalue="109" name="Services\JavaHelp\archive-helpset.xml\position"/>
+
+    <!-- 11. Background Tasks -->
+    <attr intvalue="111" name="Services\JavaHelp\tasks-activation-helpset.xml\position"/>
+    <attr intvalue="112" name="Services\JavaHelp\tasks-recurrence-helpset.xml\position"/>
+
+    <!-- 12. Shortcuts -->
+    <attr intvalue="121" name="Services\JavaHelp\shortcuts-helpset.xml\position"/>
+
+
+    <attr intvalue="5000" name="Services\JavaHelp\member-helpset.xml\position"/>
+    <attr intvalue="5001" name="Services\JavaHelp\action-helpset.xml\position"/>
+    <attr intvalue="5002" name="Services\JavaHelp\project-helpset.xml\position"/>
+
+
+    <folder name="Actions">
+        <folder name="Edit">
+            <!--file name="org-netbeans-core-ui-sysopen-SystemOpenAction.instance_hidden"/-->
+            <file name="org-openide-actions-GotoAction.instance_hidden"/>
+            <file name="org-openide-actions-ReplaceAction.instance_hidden"/>
+        </folder>
+        <folder name="File">
+            <file name="tr-view-PrintAction.instance_hidden"/>
+        </folder>
+        <file name="Other_hidden"/>
+        <folder name="System">
+            <file name="org-netbeans-core-actions-JumpNextAction.instance_hidden"/>
+            <file name="org-netbeans-core-actions-JumpPrevAction.instance_hidden"/>
+            <file name="org-netbeans-modules-favorites-templates-TemplatesAction.instance_hidden"/>
+            <file name="org-netbeans-progress-module-CancelAction.instance_hidden"/>
+            <file name="org-openide-actions-EditAction.instance_hidden"/>
+            <file name="org-openide-actions-FileSystemRefreshAction.instance_hidden"/>
+            <file name="org-openide-actions-InstantiateAction.instance_hidden"/>
+            <file name="org-openide-actions-PageSetupAction.instance_hidden"/>
+            <file name="org-openide-actions-PopupAction.instance_hidden"/>
+            <file name="org-openide-actions-PrintAction.instance_hidden"/>
+            <file name="org-openide-actions-ReorderAction.instance_hidden"/>
+        </folder>
+        <!--file name="Window_hidden"/-->
+    </folder>
+    <folder name="Menu">
+        <folder name="File">
+            <!--attr name="position" intvalue="100"/-->
+            <file name="org-openide-actions-SaveAction.instance_hidden"/>
+            <file name="org-openide-actions-SaveAsAction.instance_hidden"/>
+            <file name="org-openide-actions-SaveAsAction.shadow_hidden"/>
+            <file name="org-openide-actions-SaveAllAction.instance_hidden"/>
+            <file name="org-openide-actions-PageSetupAction.instance_hidden"/>
+            <file name="org-openide-actions-PrintAction.instance_hidden"/>
+        </folder>
+        <folder name="Edit">
+            <!--attr name="position" intvalue="200"/-->                        
+            <!--file name="org-openide-actions-UndoAction.instance_hidden"/-->    
+            <!--file name="org-openide-actions-RedoAction.instance_hidden"/-->    
+            <!--file name="org-openide-actions-FindAction.instance_hidden"/-->
+            <file name="org-openide-actions-ReplaceAction.instance_hidden"/>
+            <file name="org-netbeans-core-actions-JumpNextAction.shadow_hidden"/>
+            <file name="org-netbeans-core-actions-JumpPrevAction.shadow_hidden"/>
+            <file name="Separator3.instance_hidden"/>
+        </folder>
+        <folder name="View">
+            <!--attr name="position" intvalue="800"/-->
+            <file name="org-netbeans-core-actions-HTMLViewAction.instance_hidden"/>
+        </folder>
+        <file name="GoTo_hidden"><!-- Navigate menu -->               
+            <!--attr name="position" intvalue="400"/-->
+        </file>
+        <folder name="Setup">
+            <attr name="position" intvalue="520"/>
+        </folder>
+        <folder name="Collect">
+            <attr name="position" intvalue="540"/>
+        </folder>
+        <folder name="Process">
+            <attr name="position" intvalue="560"/>
+        </folder>
+        <folder name="Review">
+            <attr name="position" intvalue="580"/>
+        </folder>
+        <folder name="Window_hidden">
+            <!--attr name="position" intvalue="800"/-->
+        </folder>
+        <folder name="Tools">
+            <!--attr name="position" intvalue="1000"/-->
+            <file name="org-netbeans-modules-favorites-templates-TemplatesAction.instance_hidden"/>
+        </folder>
+        <folder name="Help">
+            <!--attr name="position" intvalue="1300"/-->            
+            <!--file name="master-help.xml_hidden"/-->
+        </folder>
+    </folder>
+    
+    <folder name="OptionsDialog">
+        <folder name="Advanced">
+            <file name="org-netbeans-core-ui-options-filetypes-FileAssociationsAdvancedOption.instance_hidden"/>
+            <file name="org-netbeans-core-windows-options-WinSysAdvancedOption.instance_hidden"/>
+            <file name="au-com-trgtd-tr-appl-prefs-ApplicationAdvancedOption.instance"/>
+        </folder>
+    </folder>
+    
+    <!--folder name="OptionsDialog"-->
+        <!--file name="Advanced.instance_hidden"/-->
+        <!--file name="Advanced_hidden"/-->
+    <!--/folder-->
+    
+    <folder name="Toolbars">
+        <file name="Standard.xml" url="standard-tr.xml"/>
+    </folder>
+    <folder name="Shortcuts">
+    </folder>
+    <folder name="Services">
+        <folder name="AutoupdateType">
+            <file name="tr_update_center.instance">
+                <attr name="SystemFileSystem.localizingBundle" stringvalue="au.com.trgtd.tr.appl.Bundle"/>
+                <attr name="enabled" boolvalue="true"/>
+                <attr name="instanceCreate" methodvalue="org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogFactory.createUpdateProvider"/>
+                <attr name="instanceOf" stringvalue="org.netbeans.spi.autoupdate.UpdateProvider"/>
+                <attr name="url_key" stringvalue="tr_update_center"/>
+            </file>
+        </folder>
+        <folder name="JavaHelp">
+            <file name="prefs-appl-helpset.xml" url="prefs-appl-helpset.xml"/>
+        </folder>
+        <file name="org-openide-text-PrintSettings.settings_hidden"/>
+    </folder>
+    <folder name="UI">
+        <file name="Services_hidden"/>
+    </folder>
+</filesystem>

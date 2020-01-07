@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.netbeans.modules.xml.schema.completion">
+    <module_version install_time="1226277186210" last="true" origin="installer" specification_version="1.2.1">
+        <file crc="2474693189" name="config/Modules/org-netbeans-modules-xml-schema-completion.xml"/>
+        <file crc="3218332686" name="modules/org-netbeans-modules-xml-schema-completion.jar"/>
+    </module_version>
+</module>

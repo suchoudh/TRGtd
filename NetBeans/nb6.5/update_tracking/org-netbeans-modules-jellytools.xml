@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.netbeans.modules.jellytools/2">
+    <module_version install_time="1226277488806" last="true" origin="installer" specification_version="2.0.1.1.1">
+        <file crc="1066310028" name="config/Modules/org-netbeans-modules-jellytools.xml"/>
+        <file crc="839915383" name="modules/org-netbeans-modules-jellytools.jar"/>
+    </module_version>
+</module>

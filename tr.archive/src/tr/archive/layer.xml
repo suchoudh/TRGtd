@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.1//EN" "http://www.netbeans.org/dtds/filesystem-1_1.dtd">
+<filesystem>    
+    <folder name="Actions">
+        <folder name="File">
+            <file name="tr-archive-ArchiveAction.instance"/>
+        </folder>
+    </folder>
+    <folder name="Menu">        
+        <folder name="File">                        
+            <file name="tr-archive-sep900.instance">
+                <attr name="instanceClass" stringvalue="javax.swing.JSeparator"/>
+                <attr name="position" intvalue="900"/>                                                
+            </file>                              
+            <file name="tr-archive.shadow">
+                <attr name="originalFile" stringvalue="Actions/File/tr-archive-ArchiveAction.instance"/>
+                <attr name="position" intvalue="910"/>                                                
+            </file>                        
+            <file name="tr-archive-sep990.instance">
+                <attr name="instanceClass" stringvalue="javax.swing.JSeparator"/>
+                <attr name="position" intvalue="990"/>                                                
+            </file>                              
+        </folder>
+    </folder>            
+    <folder name="Services">
+        <folder name="JavaHelp">
+            <file name="archive-helpset.xml" url="archive-helpset.xml"/>
+        </folder>
+    </folder>
+</filesystem>

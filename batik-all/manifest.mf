@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+OpenIDE-Module: org.w3c.css
+OpenIDE-Module-Localizing-Bundle: org/w3c/css/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+

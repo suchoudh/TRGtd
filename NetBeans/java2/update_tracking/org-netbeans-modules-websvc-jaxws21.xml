@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.netbeans.modules.websvc.jaxws21/1">
+    <module_version install_time="1226276965836" last="true" origin="installer" specification_version="1.3.1">
+        <file crc="3538830813" name="config/Modules/org-netbeans-modules-websvc-jaxws21.xml"/>
+        <file crc="2542647753" name="docs/jaxws-2_1-api-doc.zip"/>
+        <file crc="2838057722" name="modules/ext/jaxws21/FastInfoset.jar"/>
+        <file crc="2344463122" name="modules/ext/jaxws21/http.jar"/>
+        <file crc="719092655" name="modules/ext/jaxws21/jaxws-rt.jar"/>
+        <file crc="1059589255" name="modules/ext/jaxws21/jaxws-tools.jar"/>
+        <file crc="583808664" name="modules/ext/jaxws21/mimepull.jar"/>
+        <file crc="1722124864" name="modules/ext/jaxws21/resolver.jar"/>
+        <file crc="3694862243" name="modules/ext/jaxws21/saaj-impl.jar"/>
+        <file crc="1453103606" name="modules/ext/jaxws21/sjsxp.jar"/>
+        <file crc="3252171024" name="modules/ext/jaxws21/stax-ex.jar"/>
+        <file crc="1455903017" name="modules/ext/jaxws21/streambuffer.jar"/>
+        <file crc="89608476" name="modules/org-netbeans-modules-websvc-jaxws21.jar"/>
+    </module_version>
+</module>

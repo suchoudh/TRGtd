@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.1//EN" "http://www.netbeans.org/dtds/filesystem-1_1.dtd">
+<filesystem>
+    <folder name="Menu">        
+        <folder name="File">  
+            <file name="tr-extract-exports-sep500.instance">
+                <attr name="instanceClass" stringvalue="javax.swing.JSeparator"/>
+                <attr name="position" intvalue="500"/>                                                
+            </file>                                                          
+            <folder name="Import">        
+                <attr name="position" intvalue="510"/>                                                
+            </folder>               
+            <file name="tr-extract-exports-sep590.instance">
+                <attr name="instanceClass" stringvalue="javax.swing.JSeparator"/>
+                <attr name="position" intvalue="590"/>                                                
+            </file>                                                          
+        </folder>    
+    </folder>    
+    <folder name="Services">
+        <folder name="JavaHelp">
+            <file name="imports-helpset.xml" url="imports-helpset.xml"/>
+        </folder>
+    </folder>
+</filesystem>

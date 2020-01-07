@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
+
+Copyright 1997-2007 Sun Microsystems, Inc. All rights reserved.
+
+
+The contents of this file are subject to the terms of either the GNU
+General Public License Version 2 only ("GPL") or the Common
+Development and Distribution License("CDDL") (collectively, the
+"License"). You may not use this file except in compliance with the
+License. You can obtain a copy of the License at
+http://www.netbeans.org/cddl-gplv2.html
+or nbbuild/licenses/CDDL-GPL-2-CP. See the License for the
+specific language governing permissions and limitations under the
+License.  When distributing the software, include this License Header
+Notice in each file and include the License file at
+nbbuild/licenses/CDDL-GPL-2-CP.  Sun designates this
+particular file as subject to the "Classpath" exception as provided
+by Sun in the GPL Version 2 section of the License file that
+accompanied this code. If applicable, add the following below the
+License Header, with the fields enclosed by brackets [] replaced by
+your own identifying information:
+"Portions Copyrighted [year] [name of copyright owner]"
+
+Contributor(s):
+
+The Original Software is NetBeans. The Initial Developer of the Original
+Software is Sun Microsystems, Inc. Portions Copyright 1997-2006 Sun
+Microsystems, Inc. All Rights Reserved.
+
+If you wish your version of this file to be governed by only the CDDL
+or only the GPL Version 2, indicate your decision by adding
+"[Contributor] elects to include this software in this distribution
+under the [CDDL or GPL Version 2] license." If you do not indicate a
+single choice of license, a recipient has the option to distribute
+your version of this file under either the CDDL, the GPL Version 2 or
+to extend the choice of license to its licensees as provided above.
+However, if you add GPL Version 2 code and therefore, elected the GPL
+Version 2 license, then the option applies only if the new code is
+made subject to such option by the copyright holder.
+-->
+<project name="suite" basedir=".">
+
+    <import file="jdk.xml"/>
+
+
+    <target name="-taskdefs" unless="harness.taskdefs.done">
+        <dirname property="harness.dir" file="${suite.file}"/>
+        <echo level="verbose">Using build harness in ${harness.dir}</echo>
+        <taskdef classpath="${harness.dir}/tasks.jar" resource="org/netbeans/nbbuild/taskdefs.properties"/>
+        <property name="harness.taskdefs.done" value="true"/>
+    </target>
+
+    <target name="-init" depends="-taskdefs">
+        <property file="nbproject/private/private.properties"/>
+        <property file="nbproject/project.properties"/>
+        <sortsuitemodules unsortedmodules="${modules}" sortedmodulesproperty="modules.sorted"/>
+        <property name="cluster" location="build/cluster"/>
+        <echo level="verbose">Suite in ${basedir} with target platform ${netbeans.dest.dir}, build cluster ${cluster}, and sorted modules ${modules.sorted}</echo>
+        <!-- synchronize with SuiteProject -->
+        <property name="disabled.modules" value=""/>
+        <property name="enabled.clusters" value=""/>
+        <property name="disabled.clusters" value=""/>
+        <property name="app.version" value="0.1"/>
+        <property name="branding.dir" location="branding"/>
+        <property name="dist.dir" location="dist"/>
+        <condition property="run.branding"> <!-- #84689 -->
+            <and>
+                <available file="${branding.dir}" type="dir"/>
+                <isset property="branding.token"/>
+            </and>
+        </condition>
+    </target>
+
+    <target name="-release.dir">
+        <property name="release.dir" location="release"/>
+        <condition property="has.release.dir">
+            <available file="${release.dir}"/>
+        </condition>
+    </target>
+    <target name="-release.files" depends="-release.dir" if="has.release.dir">
+        <pathconvert pathsep="," property="release.files">
+            <path>
+                <fileset dir="${release.dir}"/>
+            </path>
+            <map from="${release.dir}${file.separator}" to=""/>
+        </pathconvert>
+    </target>
+
+    <target name="files-init" depends="-release.files">
+        <property name="release.files" value=""/>
+    </target>    
+    
+    <target name="release" depends="files-init" if="has.release.dir">
+        <mkdir dir="${cluster}"/>
+        <copy todir="${cluster}">
+            <fileset dir="${release.dir}">
+                <patternset includes="${release.files}"/>
+            </fileset>
+        </copy>
+    </target>
+    
+
+    <target name="build" depends="-init,branding,release" description="Build all modules in the suite.">
+        <subant target="netbeans" buildpath="${modules.sorted}" inheritrefs="false" inheritall="false"/>
+        <mkdir dir="${cluster}/config/Modules"/>
+        <createmodulexml xmldir="${cluster}/config/Modules">
+            <hidden dir="${netbeans.dest.dir}">
+                <custom classpath="${harness.dir}/tasks.jar" classname="org.netbeans.nbbuild.ModuleSelector">
+                    <param name="excludeModules" value="${disabled.modules}"/>
+                    <param name="excluded" value="true"/>
+                </custom>
+            </hidden>
+        </createmodulexml>
+    </target>
+
+    <target name="nbms" depends="build" description="Build NBMs and an Auto Update site descriptor for all modules in the suite.">
+        <property name="build.updates.dir" location="build/updates"/>
+        <!-- reads from suite/project.properties first -->
+        <condition property="help.target.cluster" value="${nbm.target.cluster}" >
+            <isset property="nbm.target.cluster"/>
+        </condition>
+        <!-- reads app.name if exists -->
+        <condition property="help.target.cluster" value="${app.name}" >
+            <and>
+                <isset property="app.name"/>
+                <!-- #74866: only works for 6.0+ platforms. -->
+                <available resource="org/netbeans/updater/resources/autoupdate-info-2_4.dtd">
+                    <classpath>
+                        <fileset dir="${netbeans.dest.dir}">
+                            <include name="platform*/modules/ext/updater.jar"/>
+                        </fileset>
+                    </classpath>
+                </available>
+            </and>
+        </condition>
+        <!-- sets property 'nbm.target.cluster.name' to 'nbm.target.cluster' if helper property set -->
+        <condition property="nbm.target.cluster.name" value="nbm.target.cluster" >
+            <isset property="help.target.cluster"/>
+        </condition>
+        <property name="nbm.target.cluster.name" value="" />
+        <mkdir dir="${build.updates.dir}"/>
+        <subant target="nbm" buildpath="${modules.sorted}" inheritrefs="false" inheritall="false">
+            <property name="nbm.target.dir" location="${build.updates.dir}"/>
+            <property name="${nbm.target.cluster.name}" value="${help.target.cluster}" />
+        </subant>
+        <makeupdatedesc desc="${build.updates.dir}/updates.xml" distbase="." automaticgrouping="true">
+            <fileset dir="${build.updates.dir}">
+                <include name="*.nbm"/>
+            </fileset>
+            <updaterjar>
+                <fileset dir="${netbeans.dest.dir}" includes="platform*/modules/ext/updater.jar"/>
+            </updaterjar>
+        </makeupdatedesc>
+    </target>
+    
+    <target name="build-launchers" depends="-init">
+        <fail unless="app.name">Must have set at least an application name ('app.name')</fail>
+        
+        <pathconvert property="zip.platform.update.tracking">
+            <path>
+                <fileset dir="${netbeans.dest.dir}">
+                    <include name="**/update_tracking/*.xml"/>
+                </fileset>
+            </path>
+        </pathconvert>
+
+        <selector id="zip.platform.included.files">
+            <custom classpath="${harness.dir}/tasks.jar" classname="org.netbeans.nbbuild.ModuleSelector">
+                <param name="excludeModules" value="${disabled.modules}"/>
+                <param name="includeClusters" value="${enabled.clusters}"/>
+                <param name="excludeClusters" value="${disabled.clusters}"/>
+                <param name="updateTrackingFiles" value="${zip.platform.update.tracking}"/>
+            </custom>
+        </selector>
+
+        <pathconvert property="zip.platform.clusters.duplicates" pathsep=",">
+            <path>
+                <fileset dir="${netbeans.dest.dir}">
+                    <selector refid="zip.platform.included.files"/>
+                </fileset>
+            </path>
+            <mapper type="regexp" from="[/\\]([^/\\]+)[/\\]config[/\\]Modules[/\\]" to="\1"/> <!-- #71849 -->
+        </pathconvert>
+        
+        <dirset id="zip.platform.clusters" dir="${netbeans.dest.dir}" includes="${zip.platform.clusters.duplicates}" excludes="platform*"/>
+        
+        <pathconvert property="zip.platform.clusters.bare" pathsep="&#10;"> <!-- #71128: \n OK on Win but \r\n bad on Unix -->
+            <path>
+                <dirset refid="zip.platform.clusters"/>
+            </path>
+            <mapper type="regexp" from="[/\\]([^/\\]+)[/\\]?$" to="\1"/> <!-- #71849 -->
+        </pathconvert>
+
+        <property name="build.launcher.dir" location="build/launcher"/>
+        
+        <mkdir dir="${build.launcher.dir}/etc"/>
+        <mkdir dir="${build.launcher.dir}/bin"/>
+
+        <copy file="${harness.dir}/launchers/app.exe" tofile="${build.launcher.dir}/bin/${app.name}.exe"/>
+        <copy file="${harness.dir}/launchers/app_w.exe" tofile="${build.launcher.dir}/bin/${app.name}_w.exe"/>
+        <copy file="${harness.dir}/launchers/app.sh" tofile="${build.launcher.dir}/bin/${app.name}"/>
+        <copy file="${harness.dir}/etc/app.conf" tofile="${build.launcher.dir}/etc/${app.name}.conf"/>
+        <echo message="${app.name}" file="${build.launcher.dir}/etc/${app.name}.clusters"/>
+        <echo message="&#10;" file="${build.launcher.dir}/etc/${app.name}.clusters" append="true"/>
+        <echo message="${zip.platform.clusters.bare}" file="${build.launcher.dir}/etc/${app.name}.clusters" append="true"/>
+        <echo message="&#10;" file="${build.launcher.dir}/etc/${app.name}.clusters" append="true"/>
+        
+    </target>
+    
+    <target name="build-zip" depends="build,build-launchers" description="Builds a ZIP distribution of the suite, launchers, and selected modules from the platform.">
+        <mkdir dir="${dist.dir}"/>
+        <zip destfile="${dist.dir}/${app.name}.zip">
+            <zipfileset dir="${build.launcher.dir}/bin/" filemode="755" prefix="${app.name}/bin"/>
+            <zipfileset dir="${build.launcher.dir}/etc/" prefix="${app.name}/etc"/>
+            <zipfileset dir="${netbeans.dest.dir}" filemode="755" prefix="${app.name}">
+                <include name="**/lib/nbexec*"/>
+            </zipfileset>
+                
+            <zipfileset dir="${netbeans.dest.dir}" prefix="${app.name}">
+                <and>
+                    <not>
+                        <filename name="**/lib/nbexec*"/>
+                    </not>
+                    <selector refid="zip.platform.included.files"/>
+                </and>
+            </zipfileset>
+            
+            <!-- Yes, the doubled app.name is a bit ugly, but better than the alternative; cf. #66441: -->
+            <zipfileset dir="${cluster}" prefix="${app.name}/${app.name}">
+                <exclude name="config/Modules/*.xml_hidden"/>
+            </zipfileset>
+            
+        </zip>
+    </target>
+    <target name="create-platform" depends="build-zip" description="Creates an unzipped platform from the suite, launchers, and selected modules from the platform.">
+        <mkdir dir="${dist.dir}/${app.name}"/>
+        <unzip src="${dist.dir}/${app.name}.zip" dest="${dist.dir}/${app.name}">
+            <globmapper from="${app.name}/*" to="*"/>
+        </unzip>
+    </target>
+    
+    <target name="build-mac" depends="build,build-launchers" description="Builds a ZIP distribution of the suite, launchers, and selected modules from the platform.">
+        <mkdir dir="${dist.dir}"/>
+        <mkdir dir="${dist.dir}/${app.name}.app"/>
+        <mkdir dir="${dist.dir}/${app.name}.app/Contents"/>
+        <mkdir dir="${dist.dir}/${app.name}.app/Contents/MacOS"/>
+        <mkdir dir="${dist.dir}/${app.name}.app/Contents/Resources"/>
+        <copy file="${harness.dir}/etc/applicationIcon.icns" tofile="${dist.dir}/${app.name}.app/Contents/Resources/${app.name}.icns"/>
+        <copy todir="${dist.dir}/${app.name}.app/Contents/Resources/${app.name}/bin">
+            <fileset dir="${build.launcher.dir}/bin/" />
+        </copy>
+        <copy todir="${dist.dir}/${app.name}.app/Contents/Resources/${app.name}/etc">
+            <fileset dir="${build.launcher.dir}/etc/" />
+        </copy>
+        <copy todir="${dist.dir}/${app.name}.app/Contents/Resources/${app.name}">
+            <fileset dir="${netbeans.dest.dir}">
+                <include name="**/lib/nbexec*"/>
+            </fileset>
+                
+            <fileset dir="${netbeans.dest.dir}">
+                <and>
+                    <not>
+                        <filename name="**/lib/nbexec*"/>
+                    </not>
+                    <selector refid="zip.platform.included.files"/>
+                </and>
+            </fileset>
+        </copy>
+        <copy todir="${dist.dir}/${app.name}.app/Contents/Resources/${app.name}/${app.name}">
+            
+            <fileset dir="${cluster}"/>
+        </copy>
+        
+        <copy verbose="true" failonerror="false" 
+              file="${dist.dir}/${app.name}.app/Contents/Resources/${app.name}/${app.name}/etc/${app.name}.icns" 
+              tofile="${dist.dir}/${app.name}.app/Contents/Resources/${app.name}.icns"/>
+        
+        <delete file="${dist.dir}/${app.name}.app/Contents/MacOS/${app.name}"/>
+        <symlink link="${dist.dir}/${app.name}.app/Contents/MacOS/${app.name}" resource="../Resources/${app.name}/bin/${app.name}"/>
+        <chmod file="${dist.dir}/${app.name}.app/Contents/Resources/${app.name}/bin/${app.name}" perm="755"/>
+        <chmod dir="${dist.dir}" includes="${app.name}.app/Contents/Resources/${app.name}/platform*/lib/nbexec" perm="755"/>
+        
+        <copy file="${harness.dir}/etc/Info.plist" tofile="${dist.dir}/${app.name}.app/Contents/Info.plist">
+            <filterchain>
+                <replacestring from="$${app.name}" to="${app.name}"/>
+                <replacestring from="$${app.version}" to="${app.version}"/>
+                <replacestring from="$${app.title}" to="${app.title}"/>
+                <replacestring from="$${app.icon}" to="master.png"/>
+                <replacestring from="$${branding.token}" to="${branding.token}"/>
+            </filterchain>
+        </copy>
+        <!-- zipping in ant doesn't preserve symlinks that seem to be required.
+        zip destfile="${dist.dir}/${app.name}-MacOS.zip" basedir="${dist.dir}" includes="${app.name}.app/**" duplicate="preserve"/-->
+        <echo>
+You MacOS Application bundle was created at ${dist.dir}/${app.name}.app. For final packaging, use hdiutil or other tools to create a .dmg image.
+Alternatively use "zip -yr ${app.name}.app" to create a simple zipped distribution.
+        </echo>    
+    </target>    
+
+    <target name="-testuserdir-delete-init" depends="-init">
+        <property name="test.user.dir" location="build/testuserdir"/>
+        <property name="test.user.dir.lock" location="${test.user.dir}/lock"/>
+        <available property="app.running" file="${test.user.dir.lock}"/>
+    </target>
+    <target name="-testuserdir-delete-ok" depends="-testuserdir-delete-init" unless="app.running">
+        <delete dir="${test.user.dir}"/>
+    </target>
+    <target name="-testuserdir-delete-fail" depends="-testuserdir-delete-init" if="app.running">
+        <!-- #66799: best to warn about this condition... -->
+        <fail>Will not delete ${test.user.dir} because ${test.user.dir.lock} still exists; kill any running process and delete lock file if necessary</fail>
+    </target>
+    <target name="testuserdir-delete" depends="-testuserdir-delete-ok,-testuserdir-delete-fail" description="Delete testing user directory (if the application is not running); clears any saved settings etc.">
+        <ant antfile="${harness.dir}/jnlp.xml" target="clean"/>
+    </target>
+    
+    <target name="clean" depends="-init,testuserdir-delete" description="Clean everything.">
+        <delete failonerror="false" includeemptydirs="true">
+            <fileset dir="build">
+                <exclude name="testuserdir/"/>
+            </fileset>
+        </delete>
+        <subant target="clean" buildpath="${modules.sorted}" inheritrefs="false" inheritall="false"/>
+        <delete dir="${dist.dir}"/>
+    </target>
+
+    <target name="branding" depends="-init" if="run.branding">
+        <mkdir dir="${cluster}"/>
+        <branding cluster="${cluster}" overrides="${branding.dir}" token="${branding.token}"/>
+    </target>
+
+    <target name="run" depends="build,-jdk-init" description="Runs this suite in place.">
+        <ant antfile="${harness.dir}/run.xml" target="run"/>
+    </target>
+        
+    <target name="debug" depends="build,-jdk-init,-jdk-presetdef-nbjpdastart" description="Runs this suite in place in the debugger.">
+        <ant antfile="${harness.dir}/run.xml" target="debug"/>
+    </target>
+
+    <target name="profile" depends="build,-jdk-init,-jdk-presetdef-nbprofiledirect" description="Runs this suite in place in the profiler.">
+        <ant antfile="${harness.dir}/run.xml" target="profile"/>
+    </target>
+    
+    <target name="build-jnlp" depends="build,-jdk-init" description="Packages this suite as a JNLP application.">
+        <ant antfile="${harness.dir}/jnlp.xml" target="build"/>
+    </target>
+    
+    <target name="run-jnlp" depends="build,-jdk-init" description="Runs this suite as a JNLP application.">
+        <ant antfile="${harness.dir}/jnlp.xml" target="run"/>
+    </target>
+    
+    <target name="debug-jnlp" depends="build,-jdk-init,-jdk-presetdef-nbjpdastart" description="Runs this suite as a JNLP application in the debugger.">
+        <ant antfile="${harness.dir}/jnlp.xml" target="debug"/>
+    </target>
+    
+    <target name="test" depends="build" description="Runs tests for all modules in the suite.">
+        <sortsuitemodules unsortedmodules="${modules}" sortedmodulesproperty="modules.test.sorted" sorttests="true"/>
+        <subant target="test" buildpath="${modules.test.sorted}" inheritrefs="false" inheritall="false"/>
+    </target>
+    
+</project>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.netbeans.modules.hibernate/1">
+    <module_version install_time="1226277298540" last="true" origin="installer" specification_version="1.0.1">
+        <file crc="926228846" name="config/Modules/org-netbeans-modules-hibernate.xml"/>
+        <file crc="1284707422" name="modules/org-netbeans-modules-hibernate.jar"/>
+    </module_version>
+</module>

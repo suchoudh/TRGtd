@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.netbeans.modules.websvc.saas.services.amazon">
+    <module_version install_time="1226276966727" last="true" origin="installer" specification_version="1.1.1">
+        <file crc="3983851131" name="config/Modules/org-netbeans-modules-websvc-saas-services-amazon.xml"/>
+        <file crc="3980164902" name="modules/org-netbeans-modules-websvc-saas-services-amazon.jar"/>
+    </module_version>
+</module>

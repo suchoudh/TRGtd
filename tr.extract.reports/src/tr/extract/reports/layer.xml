@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.1//EN" "http://www.netbeans.org/dtds/filesystem-1_1.dtd">
+<filesystem>
+
+    <folder name="Menu">
+        <folder name="Reports">
+            <attr name="SystemFileSystem.localizingBundle" stringvalue="tr.extract.reports.Bundle"/>
+            <attr name="position" intvalue="790"/>
+        </folder>
+    </folder>
+    <folder name="Services">
+        <folder name="JavaHelp">
+            <file name="reports-helpset.xml" url="reports-helpset.xml">
+                <attr name="position" stringvalue="3532"/>
+            </file>
+        </folder>
+    </folder>
+</filesystem>

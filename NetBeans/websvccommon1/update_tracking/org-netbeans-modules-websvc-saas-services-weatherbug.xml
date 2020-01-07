@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.netbeans.modules.websvc.saas.services.weatherbug">
+    <module_version install_time="1226277194076" last="true" origin="installer" specification_version="1.1.1">
+        <file crc="2868622757" name="config/Modules/org-netbeans-modules-websvc-saas-services-weatherbug.xml"/>
+        <file crc="1777466545" name="modules/org-netbeans-modules-websvc-saas-services-weatherbug.jar"/>
+    </module_version>
+</module>

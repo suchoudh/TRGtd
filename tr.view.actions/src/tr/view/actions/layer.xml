@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.1//EN" "http://www.netbeans.org/dtds/filesystem-1_1.dtd">
+<filesystem>
+    <folder name="Actions">        
+        <folder name="Review">
+            <file name="tr-view-actions-RAAction.instance"/>
+        </folder>
+    </folder>
+    <folder name="OptionsDialog">
+        <folder name="Advanced">
+            <file name="tr-view-actions-prefs-ActionsAdvancedOption.instance">
+                <attr name="position" intvalue="800"/>                                        
+            </file>
+        </folder>
+        <file name="tr-view-actions-screens-prefs-ActionsScreensOptionsCategory.instance">        
+            <attr name="position" intvalue="900"/>                        
+        </file>
+    </folder>
+    <folder name="Menu">                        
+        <folder name="Review">                    
+            <attr name="SystemFileSystem.localizingBundle" stringvalue="tr.view.actions.Bundle" />                    
+            <file name="RAAction.shadow">
+                <attr name="position" intvalue="820"/>                
+                <attr name="originalFile" stringvalue="Actions/Review/tr-view-actions-RAAction.instance"/>
+            </file>
+        </folder>
+    </folder>    
+    <folder name="Services">
+        <folder name="JavaHelp">
+            <file name="review-actions-helpset.xml" url="review-actions-helpset.xml"/>
+            <file name="prefs-review-actions-helpset.xml" url="prefs-review-actions-helpset.xml"/>
+            <file name="prefs-actions-screens-helpset.xml" url="prefs-actions-screens-helpset.xml"/>
+        </folder>
+    </folder>
+    <folder name="Windows2">
+    <folder name="Modes">                          
+    <file name="ra-actions.wsmode" url="RAActionsWsmode.xml"/>            
+    <folder name="ra-actions"/>
+    <file name="ra-projects.wsmode" url="RAProjectsWsmode.xml"/>            
+    <folder name="ra-projects"/>
+        <file name="ra-editor.wsmode" url="RAEditorWsmode.xml"/>                        
+        <folder name="ra-editor"/>
+        </folder>
+    </folder>    
+    <folder name="Toolbars">
+        <folder name="ThinkingRock">
+            <file name="RAAction.shadow">
+                <attr name="position" intvalue="320"/>                
+                <attr name="originalFile" stringvalue="Actions/Review/tr-view-actions-RAAction.instance"/>
+            </file>           
+        </folder>
+    </folder>    
+    <folder name="Shortcuts">
+        <file name="D-S-A.shadow">
+            <attr name="originalFile" stringvalue="Actions/Review/tr-view-actions-RAAction.instance"/>
+        </file>        
+    </folder>        
+</filesystem>

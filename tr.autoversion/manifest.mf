@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+OpenIDE-Module: tr.autoversion
+OpenIDE-Module-Install: tr/autoversion/Installer.class
+OpenIDE-Module-Localizing-Bundle: tr/autoversion/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+

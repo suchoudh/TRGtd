@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Calendar Preferences</title>
+        <link rel="stylesheet" href="nbdocs:/tr/model/docs/ide.css" type="text/css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h2>Calendar Preferences</h2>
+        <p>
+            In this category there is an option to publish data to an iCalendar format file.
+        </p>
+        <p>
+            If this option is selected the path for the file can be entered. This can be 
+            either:
+        </p>
+        <br>
+        <table>
+            <tr><td><b>a file</b></td><td><i>&nbsp;&nbsp;The selected file is used as the 
+            output file.</i></td></tr>	
+            <tr><td><b>a folder</b></td><td><i>&nbsp;&nbsp;The output file will be put in 
+                        the selected folder and have the same name as the data file but with .ics 
+            extension.</i></td></tr>
+            <tr><td><b>blank</b></td><td><i>&nbsp;&nbsp;The output file will be put in the 
+                        same folder and have the same name as the data file but with the .ics extension.
+            </i></td></tr>
+        </table>
+        <p>
+            The iCalendar file is output every time the datafile is saved (at least every 30 
+            seconds). It will be populated with Do Asap actions as To Do items, Delegated 
+            Actions with a follow-up date as All Day Events and Scheduled Actions as
+            Specific Date and Time Events.
+        </p>
+        <p>
+           The user can also specify a Time zone which is used for the iCalendar file.
+        </p>
+    </body>
+</html>

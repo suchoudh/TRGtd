@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+OpenIDE-Module: tr.prefs.projects
+OpenIDE-Module-Layer: tr/prefs/projects/layer.xml
+OpenIDE-Module-Localizing-Bundle: tr/prefs/projects/Bundle.properties
+OpenIDE-Module-Requires: org.netbeans.api.javahelp.Help
+OpenIDE-Module-Specification-Version: 1.0
+

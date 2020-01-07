@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+OpenIDE-Module: tr.background.activation
+OpenIDE-Module-Install: tr/background/activation/Installer.class
+OpenIDE-Module-Layer: tr/background/activation/layer.xml
+OpenIDE-Module-Localizing-Bundle: tr/background/activation/Bundle.properties
+OpenIDE-Module-Requires: org.netbeans.api.javahelp.Help
+OpenIDE-Module-Specification-Version: 1.0
+

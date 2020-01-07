@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.netbeans.modules.db/1">
+<module_version install_time="1226277740292" last="false" origin="installer" specification_version="1.30.1.30">
+<file crc="3740721073" name="config/ModuleAutoDeps/org-netbeans-modules-db.xml"/>
+<file crc="1289694107" name="config/Modules/org-netbeans-modules-db.xml"/>
+<file crc="562543981" name="modules/docs/org-netbeans-modules-db.jar"/>
+<file crc="1577930679" name="modules/ext/ddl.jar"/>
+<file crc="403864191" name="modules/org-netbeans-modules-db.jar"/>
+</module_version>
+<module_version install_time="1229388329650" last="true" origin="NetBeans" specification_version="1.30.2.30">
+<file crc="649385178" name="modules/docs/locale/org-netbeans-modules-db_ja.jar"/>
+<file crc="3096826349" name="modules/docs/locale/org-netbeans-modules-db_pt_BR.jar"/>
+<file crc="1294020639" name="modules/docs/locale/org-netbeans-modules-db_zh_CN.jar"/>
+<file crc="2290455003" name="modules/ext/locale/ddl_ja.jar"/>
+<file crc="2819827133" name="modules/ext/locale/ddl_pt_BR.jar"/>
+<file crc="2982916896" name="modules/ext/locale/ddl_zh_CN.jar"/>
+<file crc="4127440404" name="modules/locale/org-netbeans-modules-db_ja.jar"/>
+<file crc="1965804640" name="modules/locale/org-netbeans-modules-db_pt_BR.jar"/>
+<file crc="400965355" name="modules/locale/org-netbeans-modules-db_zh_CN.jar"/>
+<file crc="3740721073" name="config/ModuleAutoDeps/org-netbeans-modules-db.xml"/>
+<file crc="976884390" name="config/Modules/org-netbeans-modules-db.xml"/>
+<file crc="3839225246" name="modules/docs/org-netbeans-modules-db.jar"/>
+<file crc="3426964080" name="modules/ext/ddl.jar"/>
+<file crc="603525618" name="modules/org-netbeans-modules-db.jar"/>
+</module_version>
+</module>

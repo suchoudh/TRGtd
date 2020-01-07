@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.netbeans.modules.profiler.j2ee.jboss/1">
+    <module_version install_time="1226277283563" last="true" origin="installer" specification_version="1.5.1">
+        <file crc="1473063626" name="config/Modules/org-netbeans-modules-profiler-j2ee-jboss.xml"/>
+        <file crc="567672015" name="modules/org-netbeans-modules-profiler-j2ee-jboss.jar"/>
+    </module_version>
+</module>

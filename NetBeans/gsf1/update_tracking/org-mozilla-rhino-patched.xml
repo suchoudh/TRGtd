@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.mozilla.rhino.patched/1">
+    <module_version install_time="1226276990878" last="true" origin="installer" specification_version="1.102.1">
+        <file crc="4028079689" name="config/Modules/org-mozilla-rhino-patched.xml"/>
+        <file crc="342853324" name="modules/org-mozilla-rhino-patched.jar"/>
+    </module_version>
+</module>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.1//EN" "http://www.netbeans.org/dtds/filesystem-1_1.dtd">
+<filesystem>
+    <attr name="Services\JavaHelp\action-helpset.xml\position" intvalue="2300"/>
+    <attr name="Services\JavaHelp\appl-helpset.xml\position" intvalue="100"/>
+    <attr name="Services\JavaHelp\archive-helpset.xml\position" intvalue="3700"/>
+    <attr name="Services\JavaHelp\collect-helpset.xml\position" intvalue="700"/>
+    <attr name="Services\JavaHelp\contexts-helpset.xml\position" intvalue="300"/>
+    <attr name="Services\JavaHelp\criteria-helpset.xml\position" intvalue="400"/>
+    <attr name="Services\JavaHelp\export-actions-helpset.xml\position" intvalue="1800"/>
+    <attr name="Services\JavaHelp\export-future-helpset.xml\position" intvalue="1900"/>
+    <attr name="Services\JavaHelp\export-information-helpset.xml\position" intvalue="2000"/>
+    <attr name="Services\JavaHelp\exports-helpset.xml\position" intvalue="2100"/>
+    <attr name="Services\JavaHelp\import-project-template-helpset.xml\position" intvalue="1600"/>
+    <attr name="Services\JavaHelp\imports-helpset.xml\position" intvalue="1400"/>
+    <attr name="Services\JavaHelp\imports-thoughts-helpset.xml\position" intvalue="1700"/>
+    <attr name="Services\JavaHelp\member-helpset.xml\position" intvalue="3200"/>
+    <attr name="Services\JavaHelp\overview-helpset.xml\position" intvalue="200"/>
+    <attr name="Services\JavaHelp\prefs-about-helpset.xml\position" intvalue="2200"/>
+    <attr name="Services\JavaHelp\prefs-actions-screens-helpset.xml\position" intvalue="3600"/>
+    <attr name="Services\JavaHelp\prefs-calendar-helpset.xml\position" intvalue="2400"/>
+    <attr name="Services\JavaHelp\prefs-datafile-helpset.xml\position" intvalue="2500"/>
+    <attr name="Services\JavaHelp\prefs-dates-helpset.xml\position" intvalue="2600"/>
+    <attr name="Services\JavaHelp\prefs-extract-clean-helpset.xml\position" intvalue="2900"/>
+    <attr name="Services\JavaHelp\prefs-extract-helpset.xml\position" intvalue="2800"/>
+    <attr name="Services\JavaHelp\prefs-gui-helpset.xml\position" intvalue="3000"/>
+    <attr name="Services\JavaHelp\prefs-import-thoughts-helpset.xml\position" intvalue="3100"/>
+    <attr name="Services\JavaHelp\prefs-projects-helpset.xml\position" intvalue="3300"/>
+    <attr name="Services\JavaHelp\prefs-recurrence-helpset.xml\position" intvalue="3400"/>
+    <attr name="Services\JavaHelp\prefs-review-actions-helpset.xml\position" intvalue="3500"/>
+    <attr name="Services\JavaHelp\process-helpset.xml\position" intvalue="800"/>
+    <attr name="Services\JavaHelp\reports-helpset.xml\position" intvalue="500"/>
+    <attr name="Services\JavaHelp\review-actions-helpset.xml\position" intvalue="900"/>
+    <attr name="Services\JavaHelp\review-future-helpset.xml\position" intvalue="1200"/>
+    <attr name="Services\JavaHelp\review-projects-helpset.xml\position" intvalue="1000"/>
+    <attr name="Services\JavaHelp\review-reference-helpset.xml\position" intvalue="1300"/>
+    <attr name="Services\JavaHelp\sequencing-helpset.xml\position" intvalue="1100"/>
+    <attr name="Services\JavaHelp\shortcuts-helpset.xml\position" intvalue="4000"/>
+    <attr name="Services\JavaHelp\tasks-activation-helpset.xml\position" intvalue="3800"/>
+    <attr name="Services\JavaHelp\tasks-recurrence-helpset.xml\position" intvalue="3900"/>
+    <attr name="Services\JavaHelp\topics-helpset.xml\position" intvalue="600"/>
+    <folder name="Actions">
+        <folder name="File">
+            <file name="au-com-trgtd-email-RetrieveEmailAction.instance"/>
+        </folder>
+    </folder>
+    <folder name="Menu">
+        <folder name="File">
+            <file name="au-com-trgtd-email-RetrieveEmailAction-separatorAfter.instance">
+                <attr name="instanceClass" stringvalue="javax.swing.JSeparator"/>
+                <attr name="position" intvalue="477"/>
+            </file>
+            <file name="au-com-trgtd-email-RetrieveEmailAction-separatorBefore.instance">
+                <attr name="instanceClass" stringvalue="javax.swing.JSeparator"/>
+                <attr name="position" intvalue="452"/>
+            </file>
+            <file name="au-com-trgtd-email-RetrieveEmailAction.shadow">
+                <attr name="originalFile" stringvalue="Actions/File/au-com-trgtd-email-RetrieveEmailAction.instance"/>
+                <attr name="position" intvalue="465"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="OptionsDialog">
+        <folder name="Advanced">
+            <file name="au-com-trgtd-email-prefs-EmailAdvancedOption.instance"/>
+        </folder>
+    </folder>
+    <folder name="Services">
+        <folder name="JavaHelp">
+            <file name="email-helpset.xml" url="email-helpset.xml">
+                <attr name="position" intvalue="2700"/>
+            </file>
+            <file name="email-retrieve-helpset.xml" url="email-retrieve-helpset.xml">
+                <attr name="position" intvalue="1750"/>
+            </file>
+        </folder>
+    </folder>
+</filesystem>

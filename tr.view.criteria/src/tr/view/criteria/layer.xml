@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.1//EN" "http://www.netbeans.org/dtds/filesystem-1_1.dtd">
+<filesystem>
+    
+    <folder name="Actions">
+        <folder name="Setup">
+            <file name="tr-view-criteria-CriteriaAction.instance"/>
+        </folder>
+    </folder>
+    
+    <folder name="Menu">
+        <folder name="Setup">
+            <file name="CriteriaAction.shadow">
+                <attr name="position" intvalue="200"/>                                                                                
+                <attr name="originalFile" stringvalue="Actions/Setup/tr-view-criteria-CriteriaAction.instance"/>
+            </file>
+        </folder>        
+    </folder>    
+    
+    <folder name="Services">
+        <folder name="JavaHelp">
+            <file name="criteria-helpset.xml" url="criteria-helpset.xml"/>
+        </folder>
+    </folder>
+    
+    <folder name="Windows2">
+        <folder name="Components">
+            <file name="CriteriaTopComponent.settings" url="CriteriaTopComponentSettings.xml"/>
+        </folder>
+        <folder name="Modes">            
+            <file name="criteria.wsmode" url="CriteriaWsmode.xml"/>
+            <folder name="criteria"/>
+        </folder>
+    </folder>    
+
+    <folder name="Toolbars">
+        <folder name="ThinkingRock">
+            <file name="CriteriaAction.shadow">
+                <attr name="position" intvalue="520"/>                
+                <attr name="originalFile" stringvalue="Actions/Setup/tr-view-criteria-CriteriaAction.instance"/>
+            </file>
+        </folder>
+    </folder>
+    
+    <folder name="Shortcuts">
+        <file name="D-S-K.shadow">
+            <attr name="originalFile" stringvalue="Actions/Setup/tr-view-criteria-CriteriaAction.instance"/>
+        </file>
+    </folder>        
+</filesystem>

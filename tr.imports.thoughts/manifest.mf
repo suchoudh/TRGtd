@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+OpenIDE-Module: tr.imports.thoughts/2
+OpenIDE-Module-Implementation-Version: 1
+OpenIDE-Module-Layer: tr/imports/thoughts/layer.xml
+OpenIDE-Module-Localizing-Bundle: tr/imports/thoughts/Bundle.properties
+OpenIDE-Module-Requires: org.netbeans.api.javahelp.Help
+

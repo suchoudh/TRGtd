@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.netbeans.libs.springframework">
+    <module_version install_time="1226276925796" last="true" origin="installer" specification_version="1.1.1">
+        <file crc="3999257842" name="config/Modules/org-netbeans-libs-springframework.xml"/>
+        <file crc="3918594219" name="modules/ext/spring/spring-2.5.jar"/>
+        <file crc="3576641232" name="modules/org-netbeans-libs-springframework.jar"/>
+    </module_version>
+</module>

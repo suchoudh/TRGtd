@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+OpenIDE-Module: org.apache.avalon.framework
+OpenIDE-Module-Localizing-Bundle: org/apache/avalon/framework/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+

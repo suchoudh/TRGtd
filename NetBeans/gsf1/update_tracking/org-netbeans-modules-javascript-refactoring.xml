@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.netbeans.modules.javascript.refactoring/1">
+    <module_version install_time="1226277175148" last="true" origin="installer" specification_version="0.60.1">
+        <file crc="3001149669" name="config/Modules/org-netbeans-modules-javascript-refactoring.xml"/>
+        <file crc="2043049267" name="modules/org-netbeans-modules-javascript-refactoring.jar"/>
+    </module_version>
+</module>

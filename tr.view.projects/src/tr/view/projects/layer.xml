@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.1//EN" "http://www.netbeans.org/dtds/filesystem-1_1.dtd">
+<filesystem>
+    
+    <folder name="Actions">
+        <folder name="File">
+            <file name="tr-view-projects-ImportTemplateAction.instance"/>
+        </folder>
+        <folder name="Review">
+            <file name="tr-view-projects-ProjectsAction.instance"/>
+        </folder>
+        <folder name="Projects">
+            <file name="tr-view-projects-ExpandAllAction.instance"/>
+            <file name="tr-view-projects-CollapseAllAction.instance"/>
+            <file name="tr-view-projects-ToggleShowDoneAction.instance"/>
+            <file name="tr-view-projects-AddActionAction.instance"/>
+            <file name="tr-view-projects-AddProjectAction.instance"/>            
+            <file name="tr-view-projects-ProjectiseAction.instance"/>                        
+            <file name="tr-view-projects-TabAction.instance"/>                        
+            <file name="tr-view-ReprocessAction.instance"/>            
+            <file name="tr-view-projects-PostponeActionAction.instance"/>                        
+        </folder>                
+    </folder>
+    
+    <folder name="Menu">
+        <folder name="File">
+            <folder name="Import">
+                <file name="tr-view-projects-ImportTemplateAction.shadow">
+                    <attr name="originalFile" stringvalue="Actions/File/tr-view-projects-ImportTemplateAction.instance"/>
+                    <attr name="position" intvalue="990"/>
+                </file>
+            </folder>
+        </folder>
+        <folder name="Review">
+            <file name="ProjectsAction.shadow">
+                <attr name="position" intvalue="810"/>
+                <attr name="originalFile" stringvalue="Actions/Review/tr-view-projects-ProjectsAction.instance"/>
+            </file>
+        </folder>
+    </folder>
+    
+    <folder name="Services">
+        <folder name="JavaHelp">
+            <file name="review-projects-helpset.xml" url="review-projects-helpset.xml"/>
+            <file name="import-project-template-helpset.xml" url="import-project-template-helpset.xml">
+                <attr name="position" intvalue="1450"/>
+            </file>
+        </folder>
+    </folder>
+    
+    <folder name="Windows2">    
+        <folder name="Modes">            
+            <file name="projects-tree.wsmode" url="ProjectsTreeWsmode.xml"/>            
+            <folder name="projects-tree"/>
+            <file name="projects-editor.wsmode" url="EditorWsmode.xml"/>                        
+            <folder name="projects-editor"/>
+        </folder>
+    </folder>        
+    
+    <folder name="Toolbars">
+        <folder name="ThinkingRock">
+            <file name="ProjectsAction.shadow">
+                <attr name="position" intvalue="310"/>
+                <attr name="originalFile" stringvalue="Actions/Review/tr-view-projects-ProjectsAction.instance"/>
+            </file>            
+        </folder>            
+    </folder>                
+    
+    <folder name="Shortcuts">
+        <file name="D-S-P.shadow">
+            <attr name="originalFile" stringvalue="Actions/Review/tr-view-projects-ProjectsAction.instance"/>
+        </file>
+        <file name="D-C.shadow">
+            <attr name="originalFile" stringvalue="Actions/Edit/org-openide-actions-CopyAction.instance"/>
+        </file>
+        <file name="D-X.shadow">
+            <attr name="originalFile" stringvalue="Actions/Edit/org-openide-actions-CutAction.instance"/>
+        </file>
+        <file name="D-V.shadow">
+            <attr name="originalFile" stringvalue="Actions/Edit/org-openide-actions-PasteAction.instance"/>
+        </file>        
+<!--        
+        <file name="DELETE.shadow">
+            <attr name="originalFile" stringvalue="Actions/Edit/org-openide-actions-DeleteAction.instance"/>
+        </file> 
+-->        
+        <file name="D-E.shadow">
+            <attr name="originalFile" stringvalue="Actions/Projects/tr-view-projects-ExpandAllAction.instance"/>
+        </file>        
+        <file name="D-S-E.shadow">
+            <attr name="originalFile" stringvalue="Actions/Projects/tr-view-projects-CollapseAllAction.instance"/>
+        </file>        
+        <file name="D-D.shadow">
+            <attr name="originalFile" stringvalue="Actions/Projects/tr-view-projects-ToggleShowDoneAction.instance"/>
+        </file>
+        <file name="A-S-UP.shadow">
+            <attr name="originalFile" stringvalue="Actions/System/org-openide-actions-MoveUpAction.instance"/>
+        </file>        
+        <file name="A-S-DOWN.shadow">
+            <attr name="originalFile" stringvalue="Actions/System/org-openide-actions-MoveDownAction.instance"/>
+        </file>                        
+        <file name="F3.shadow">
+            <attr name="originalFile" stringvalue="Actions/Projects/tr-view-projects-AddActionAction.instance"/>
+        </file>                        
+        <file name="F4.shadow">
+            <attr name="originalFile" stringvalue="Actions/Projects/tr-view-projects-AddProjectAction.instance"/>
+        </file>        
+        <file name="D-G.shadow">
+            <attr name="originalFile" stringvalue="Actions/Projects/tr-view-projects-ProjectiseAction.instance"/>
+        </file>                                
+        <file name="F5.shadow">
+            <attr name="originalFile" stringvalue="Actions/Projects/tr-view-projects-TabAction.instance"/>
+        </file>                        
+        
+    </folder>
+</filesystem>

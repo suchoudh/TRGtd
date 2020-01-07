@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+OpenIDE-Module: javax.xml
+OpenIDE-Module-Localizing-Bundle: javax/xml/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+

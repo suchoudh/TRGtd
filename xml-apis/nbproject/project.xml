@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.apisupport.project</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/nb-module-project/3">
+            <code-name-base>javax.xml</code-name-base>
+            <suite-component/>
+            <module-dependencies/>
+            <public-packages>
+                <package>javax.xml</package>
+                <package>javax.xml.datatype</package>
+                <package>javax.xml.namespace</package>
+                <package>javax.xml.parsers</package>
+                <package>javax.xml.transform</package>
+                <package>javax.xml.transform.dom</package>
+                <package>javax.xml.transform.sax</package>
+                <package>javax.xml.transform.stream</package>
+                <package>javax.xml.validation</package>
+                <package>javax.xml.xpath</package>
+                <package>org.apache.xmlcommons</package>
+                <package>org.w3c.dom</package>
+                <package>org.w3c.dom.bootstrap</package>
+                <package>org.w3c.dom.css</package>
+                <package>org.w3c.dom.events</package>
+                <package>org.w3c.dom.html</package>
+                <package>org.w3c.dom.ls</package>
+                <package>org.w3c.dom.ranges</package>
+                <package>org.w3c.dom.stylesheets</package>
+                <package>org.w3c.dom.traversal</package>
+                <package>org.w3c.dom.views</package>
+                <package>org.w3c.dom.xpath</package>
+                <package>org.xml.sax</package>
+                <package>org.xml.sax.ext</package>
+                <package>org.xml.sax.helpers</package>
+            </public-packages>
+            <class-path-extension>
+                <runtime-relative-path>ext/xml-apis-1.3.02.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/xml-apis-1.3.02.jar</binary-origin>
+            </class-path-extension>
+        </data>
+    </configuration>
+</project>

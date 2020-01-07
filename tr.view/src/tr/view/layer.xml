@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.1//EN" "http://www.netbeans.org/dtds/filesystem-1_1.dtd">
+<filesystem>        
+    
+    <folder name="Actions">
+        <folder name="File">
+            <file name="tr-view-PrintAction.instance"/>
+        </folder>         
+        <folder name="Edit">
+            <file name="tr-view-AddAction.instance"/>
+            <file name="tr-view-DeleteAction.instance"/>            
+        </folder>
+        <folder name="View">
+            <file name="tr-view-ReprocessAction.instance"/>
+        </folder>        
+        <folder name="Help">
+            <file name="tr-view-HomePageAction.instance"/>
+        </folder>        
+    </folder>    
+    
+    <folder name="Menu">
+        <folder name="Help">
+            <file name="HomePage.shadow">
+                <attr name="originalFile" stringvalue="Actions/Help/tr-view-HomePageAction.instance"/>
+                <attr name="position" intvalue="130"/>
+            </file>                      
+        </folder>
+    </folder>    
+    
+    <folder name="Shortcuts">
+        <file name="D-N.shadow">
+            <attr name="originalFile" stringvalue="Actions/Edit/tr-view-AddAction.instance"/>
+        </file>                      
+        <file name="DELETE.shadow">
+            <attr name="originalFile" stringvalue="Actions/Edit/tr-view-DeleteAction.instance"/>
+        </file>        
+        <file name="D-P.shadow">
+            <attr name="originalFile" stringvalue="Actions/File/tr-view-PrintAction.instance"/>
+        </file>        
+        <file name="CS-W.shadow">
+            <attr name="originalFile" stringvalue="Actions/View/tr-view-ReprocessAction.instance"/>
+        </file>                        
+    </folder>                    
+</filesystem>

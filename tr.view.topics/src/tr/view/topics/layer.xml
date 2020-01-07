@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.1//EN" "http://www.netbeans.org/dtds/filesystem-1_1.dtd">
+<filesystem>
+    
+    <folder name="Actions">
+        <folder name="Setup">
+            <file name="tr-view-topics-TopicsAction.instance"/>
+        </folder>
+        <folder name="View">
+            <file name="tr-view-topics-TopicChangeAction.instance"/>
+        </folder>                
+    </folder>
+    
+    <folder name="Menu">
+        <folder name="Setup">
+            <file name="TopicsAction.shadow">
+                <attr name="position" intvalue="300"/>
+                <attr name="originalFile" stringvalue="Actions/Setup/tr-view-topics-TopicsAction.instance"/>
+            </file>            
+        </folder>
+    </folder>
+    
+    <folder name="Services">
+        <folder name="JavaHelp">
+            <file name="topics-helpset.xml" url="topics-helpset.xml"/>
+        </folder>
+    </folder>
+    
+    <folder name="Windows2">
+        <folder name="Modes">                        
+            <file name="Setup.wsmode" url="SetupWsmode.xml"/>
+            <folder name="Setup">
+            </folder>
+        </folder>
+    </folder>            
+
+    <folder name="Toolbars">
+        <folder name="ThinkingRock">            
+            <file name="TopicsAction.shadow">
+                <attr name="position" intvalue="530"/>                
+                <attr name="originalFile" stringvalue="Actions/Setup/tr-view-topics-TopicsAction.instance"/>
+            </file>
+        </folder>                
+    </folder>
+    
+    <folder name="Shortcuts">    
+        <file name="D-S-T.shadow">
+            <attr name="originalFile" stringvalue="Actions/Setup/tr-view-topics-TopicsAction.instance"/>
+        </file>
+        <file name="D-T.shadow">
+            <attr name="originalFile" stringvalue="Actions/View/tr-view-topics-TopicChangeAction.instance"/>
+        </file>                                
+    </folder>            
+
+</filesystem>

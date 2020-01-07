@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+OpenIDE-Module: tr.view.filters
+OpenIDE-Module-Localizing-Bundle: tr/view/filters/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0.1
+

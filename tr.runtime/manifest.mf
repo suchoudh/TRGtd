@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+OpenIDE-Module: tr.runtime
+OpenIDE-Module-Localizing-Bundle: tr/runtime/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+

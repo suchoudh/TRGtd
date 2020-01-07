@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.netbeans.modules.reglib">
+<module_version install_time="1226276941111" last="false" origin="installer" specification_version="1.2.1">
+<file crc="289765965" name="config/Modules/org-netbeans-modules-reglib.xml"/>
+<file crc="1752227857" name="modules/org-netbeans-modules-reglib.jar"/>
+</module_version>
+<module_version install_time="1229388331608" last="true" origin="NetBeans" specification_version="1.2.2">
+<file crc="2264765936" name="modules/locale/org-netbeans-modules-reglib_ja.jar"/>
+<file crc="1137153467" name="modules/locale/org-netbeans-modules-reglib_pt_BR.jar"/>
+<file crc="2724941693" name="modules/locale/org-netbeans-modules-reglib_zh_CN.jar"/>
+<file crc="3203151751" name="config/Modules/org-netbeans-modules-reglib.xml"/>
+<file crc="1214040858" name="modules/org-netbeans-modules-reglib.jar"/>
+</module_version>
+</module>

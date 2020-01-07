@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<registration_data version="1.0">
+   <environment>
+      <hostname>mars.local</hostname>
+      <hostId></hostId>
+      <osName>Mac OS X</osName>
+      <osVersion>10.5.5</osVersion>
+      <osArchitecture>i386</osArchitecture>
+      <systemModel></systemModel>
+      <systemManufacturer></systemManufacturer>
+      <cpuManufacturer></cpuManufacturer>
+      <serialNumber></serialNumber>
+   </environment>
+   <registry urn="urn:st:95c66982-b019-44a0-9e42-7f043ae18a50" version="1.0">
+      <service_tag>
+         <instance_urn>urn:st:38bb3804-611d-4439-8f1c-8e015fbe2ee3</instance_urn>
+         <product_name>NetBeans Integrated Development Environment 6.5</product_name>
+         <product_version>6.5</product_version>
+         <product_urn>urn:uuid:4f402a90-68b4-11dd-938b-080020a9ed93</product_urn>
+         <product_parent_urn>urn:uuid:bc76c157-8a3c-4da7-97d2-41d561ffe234</product_parent_urn>
+         <product_parent>Development Tools</product_parent>
+         <product_defined_inst_id>id=6.5,uuid=156955ea-bf61-49c8-a4e6-0ee3f6a3e3c9,java.version=1.5.0_16,dir=/Applications/NetBeans/NetBeans 6.5.app/Contents/Resources/NetBeans</product_defined_inst_id>
+         <product_vendor>NetBeans.org</product_vendor>
+         <platform_arch>i386</platform_arch>
+         <timestamp>2008-11-20 06:06:17 GMT</timestamp>
+         <container>global</container>
+         <source>NetBeans IDE 6.5</source>
+         <installer_uid>-1</installer_uid>
+      </service_tag>
+   </registry>
+</registration_data>

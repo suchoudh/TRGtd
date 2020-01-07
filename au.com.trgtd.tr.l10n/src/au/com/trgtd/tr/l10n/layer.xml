@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.1//EN" "http://www.netbeans.org/dtds/filesystem-1_1.dtd">
+<filesystem>
+    <folder name="OptionsDialog">
+        <folder name="Advanced">
+            <file name="au-com-trgtd-tr-l10n-prefs-L10nPrefsAdvancedOption.instance"/>
+        </folder>
+    </folder>
+    <folder name="Services">
+        <folder name="JavaHelp">
+            <file name="l10n-helpset.xml" url="l10n-helpset.xml">
+                <attr name="position" intvalue="3040"/>
+            </file>
+        </folder>
+    </folder>
+</filesystem>

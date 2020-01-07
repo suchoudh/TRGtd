@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.netbeans.modules.swingapp">
+<module_version install_time="1226277460715" last="false" origin="installer" specification_version="1.3.1">
+<file crc="3855838831" name="config/Modules/org-netbeans-modules-swingapp.xml"/>
+<file crc="4072655137" name="docs/appframework-1.0.3-doc.zip"/>
+<file crc="3403530670" name="modules/ext/appframework-1.0.3.jar"/>
+<file crc="2120411324" name="modules/ext/swing-worker-1.1.jar"/>
+<file crc="1769378321" name="modules/org-netbeans-modules-swingapp.jar"/>
+</module_version>
+<module_version install_time="1229388328272" last="true" origin="NetBeans" specification_version="1.3.2">
+<file crc="3369714438" name="modules/locale/org-netbeans-modules-swingapp_ja.jar"/>
+<file crc="1174865925" name="modules/locale/org-netbeans-modules-swingapp_pt_BR.jar"/>
+<file crc="74194993" name="modules/locale/org-netbeans-modules-swingapp_zh_CN.jar"/>
+<file crc="1249518501" name="config/Modules/org-netbeans-modules-swingapp.xml"/>
+<file crc="4072655137" name="docs/appframework-1.0.3-doc.zip"/>
+<file crc="3403530670" name="modules/ext/appframework-1.0.3.jar"/>
+<file crc="2120411324" name="modules/ext/swing-worker-1.1.jar"/>
+<file crc="2721639553" name="modules/org-netbeans-modules-swingapp.jar"/>
+</module_version>
+</module>

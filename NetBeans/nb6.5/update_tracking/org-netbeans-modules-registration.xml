@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.netbeans.modules.registration">
+<module_version install_time="1226277015308" last="false" origin="installer" specification_version="1.1.1">
+<file crc="2499699014" name="config/Modules/org-netbeans-modules-registration.xml"/>
+<file crc="2813310698" name="modules/org-netbeans-modules-registration.jar"/>
+</module_version>
+<module_version install_time="1229388331555" last="true" origin="NetBeans" specification_version="1.1.2">
+<file crc="3198499138" name="modules/locale/org-netbeans-modules-registration_ja.jar"/>
+<file crc="2464932768" name="modules/locale/org-netbeans-modules-registration_pt_BR.jar"/>
+<file crc="1298289412" name="modules/locale/org-netbeans-modules-registration_zh_CN.jar"/>
+<file crc="995568780" name="config/Modules/org-netbeans-modules-registration.xml"/>
+<file crc="3240074441" name="modules/org-netbeans-modules-registration.jar"/>
+</module_version>
+</module>

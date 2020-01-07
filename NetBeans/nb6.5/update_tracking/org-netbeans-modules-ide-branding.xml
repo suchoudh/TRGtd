@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.netbeans.modules.ide.branding/1">
+    <module_version install_time="1226276930956" last="true" origin="installer" specification_version="1.6.1">
+        <file crc="758707241" name="config/Modules/org-netbeans-modules-ide-branding.xml"/>
+        <file crc="1618000522" name="core/locale/core_nb.jar"/>
+        <file crc="75021357" name="modules/ext/locale/updater_nb.jar"/>
+        <file crc="978142555" name="modules/locale/org-netbeans-core-windows_nb.jar"/>
+        <file crc="2521813251" name="modules/locale/org-netbeans-core_nb.jar"/>
+        <file crc="616617622" name="modules/locale/org-netbeans-modules-autoupdate-ui_nb.jar"/>
+        <file crc="3122292552" name="modules/locale/org-netbeans-spi-quicksearch_nb.jar"/>
+        <file crc="1443345768" name="modules/org-netbeans-modules-ide-branding.jar"/>
+        <file crc="3765944826" name="netbeans.icns"/>
+        <file crc="773200671" name="netbeans.png"/>
+        <file crc="2732440801" name="shortcuts.pdf"/>
+    </module_version>
+</module>

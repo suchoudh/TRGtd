@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="org.netbeans.modules.profiler.j2ee.tomcat/1">
+    <module_version install_time="1226277284591" last="true" origin="installer" specification_version="1.5.1">
+        <file crc="860709677" name="config/Modules/org-netbeans-modules-profiler-j2ee-tomcat.xml"/>
+        <file crc="323262006" name="modules/org-netbeans-modules-profiler-j2ee-tomcat.jar"/>
+    </module_version>
+</module>
